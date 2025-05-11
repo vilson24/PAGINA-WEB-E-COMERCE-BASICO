@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Store - Bienvenido</title>
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="styleF.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Futuristic Store</div>
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro-content">
+            <h1>Bienvenido a Futuristic Store</h1>
+            <p>
+                En Futuristic Store, no solo vendemos tecnología, ofrecemos una visión de lo que puede ser el futuro. 
+                Nuestro objetivo es brindarte los productos más innovadores y de mayor calidad para que siempre estés 
+                un paso adelante. Aquí encontrarás lo último en laptops, componentes y accesorios que redefinen tu 
+                experiencia digital.
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="logo.jpg" alt="Imagen Futurista">
+        </div>
+    </section>
+
+    <section class="history">
+        <h2>Nuestra Historia</h2>
+        <p>
+            Hace pocos años, un grupo de apasionados por la tecnología decidió crear un espacio donde lo mejor de la innovación
+            tecnológica pudiera encontrarse. Así nació Futuristic Store. Desde sus inicios, la tienda ha trabajado incansablemente
+            para ofrecer productos que no solo solucionan problemas actuales, sino que preparan a sus usuarios para el mañana. 
+            Cada uno de los artículos en nuestra tienda ha sido seleccionado pensando en el futuro: laptops de última generación,
+            componentes potentes, y accesorios que hacen tu vida más fácil.
+        </p>
+        <p>
+            En Futuristic Store, creemos en un mundo donde la tecnología no es un lujo, sino una herramienta poderosa que todos 
+            merecen. Hoy, seguimos avanzando hacia nuevos horizontes, trayendo lo mejor del mañana al alcance de tu mano.
+        </p>
+    </section>
+
+    <script src="scripts.js"></script>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Store - Productos</title>
+    <link rel="stylesheet" href="../CSS/styleP.css">
+    <link rel="stylesheet" href="../CSS/styleF.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Futuristic Store</div>
+            <ul class="nav-links">
+                <li><a href="../HTML/inicio.html">Inicio</a></li>
+                <li><a href="../HTML/acercade.html">Acerca de</a></li>
+                <li><a href="../HTML/carrito.html" id="cart-button">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <center><h1>Productos</h1></center>
+    <section class="products">
+        
+        <div class="product" data-id="1" data-name="Laptop Gamer" data-price="1000">
+            <img src="../IMGS/Laptop-Gamer.png" alt="Laptop-Gamer">
+            <h3>Laptop Gamer</h3>
+            <p>Precio: $1000</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="2" data-name="Monitor 4k" data-price="500">
+            <img src="../IMGS/Monitor-4kk.jpg" alt="Monitor-4k">
+            <h3>Monitor 4k</h3>
+            <p>Precio: $500</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="3" data-name="Teclado Mecanico" data-price="100">
+            <img src="../IMGS/teclado-mecanico.png" alt="Teclado">
+            <h3>Teclado Mecanico</h3>
+            <p>Precio: $100</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="4" data-name="Mouse Inalambrico" data-price="10">
+            <img src="../IMGS/Mouse-Inalambrico.jpg" alt="Mouse-Inalambrico">
+            <h3>Mouse Inalambrico</h3>
+            <p>Precio: $10</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="5" data-name="Auriculares Bluetooth" data-price="150">
+            <img src="../IMGS/Auriculares-Bluetooth.jpg" alt="Auriculares-Bluetooth">
+            <h3>Auriculares Bluetooth</h3>
+            <p>Precio: $150</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="6" data-name="Silla Gamer" data-price="1500">
+            <img src="../IMGS/Silla-Gamer.jpg" alt="Silla-Gamer">
+            <h3>Silla Gamer</h3>
+            <p>Precio: $1500</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="7" data-name="Tarjeta Gráfica RTX 3090" data-price="1200">
+            <img src="../IMGS/Tarjeta-Gráfica-RTX-3090.jpg" alt="Tarjeta-Gráfica-RTX-3090">
+            <h3>Tarjeta Gráfica RTX 3090</h3>
+            <p>Precio: $1200</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="8" data-name="Disco Duro SSD 1TB" data-price="1000">
+            <img src="../IMGS/Disco-Duro-SSD-1TB.jpg" alt="Disco-Duro-SSD-1TB">
+            <h3>Disco Duro SSD 1TB</h3>
+            <p>Precio: $1000</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="9" data-name="Memoria RAM 16GB" data-price="130">
+            <img src="../IMGS/Memoria-RAM-16GB.jpg" alt="Memoria-RAM-16GB">
+            <h3>Memoria RAM 16GB</h3>
+            <p>Precio: $130</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+        <div class="product" data-id="10" data-name="Fuente de Poder 750W" data-price="400">
+            <img src="../IMGS/Fuente-de-Poder-750W.jpg" alt="Fuente-de-Poder-750W">
+            <h3>Fuente de Poder 750W</h3>
+            <p>Precio: $400</p>
+            <button class="add-to-cart">Añadir al Carrito</button>
+        </div>
+    </section>
+
+    <script src="../JS/script.js"></script>
+    <script>
+        fetch('../HTML/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.insertAdjacentHTML('beforeend', data);
+            });
+    </script>
+    
+</body>
+</html>
